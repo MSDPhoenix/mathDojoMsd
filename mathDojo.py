@@ -6,12 +6,13 @@ class MathDojo:
     def add(self,num,*nums):
         self.result = self.result + num
         for i in nums:
-            self.result = self.result + i
+            # self.result = self.result + i
+            self.result += i
         return self
     def subtract(self,num,*nums):
         self.result = self.result - num
         for i in nums:
-            self.result = self.result - i
+            self.result -= i
         return self
 md = MathDojo()
 
